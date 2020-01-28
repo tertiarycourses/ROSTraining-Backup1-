@@ -1,0 +1,5 @@
+# Start the ROS master 
+roscore
+
+# Run your node.
+rosrun myworkcell_core vision_node

@@ -1,0 +1,8 @@
+# Build the package
+catkin build
+
+# Run the subscriber node
+rosrun myworkcell_core vision_node
+
+# Visualize
+rqt_graph

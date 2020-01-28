@@ -1,0 +1,15 @@
+#Open up myworkcell_node.cpp for editing. Add a new ros::NodeHandle object to the main function
+
+ros::NodeHandle private_node_handle ("~");
+
+#Create a temporary string object, std::string base_frame
+
+std::string base_frame;
+private_node_handle.param<std::string>("base_frame", base_frame, "world");
+
+#Add a parameter to your myworkcell_node “start” function that accepts the base_frame argument
+#Add myworkcell_node to the existing workcell.launch file. 
+
+<node name="myworkcell_node" pkg="myworkcell_core" type="myworkcell_node" output="screen">
+  <param name="base_frame" value="world"/>
+</node>

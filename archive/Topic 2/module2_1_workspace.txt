@@ -1,0 +1,30 @@
+# Create the root workspace directory (we’ll use catkin_ws)
+
+cd ~/
+mkdir --parents catkin_ws/src
+cd catkin_ws
+
+# Initialize the catkin workspace
+
+catkin init
+
+# Build the workspace
+
+catkin build
+ls
+
+catkin clean
+ls
+catkin build
+ls
+
+# Make the workspace visible to ROS
+
+source devel/setup.bash
+
+# To save typing, add this to your ~/.bashrc file, so it is automatically sourced for each new terminal:
+
+gedit ~/.bashrc
+
+# add to the end: source ~/catkin_ws/devel/setup.bash
+# save and close the editor
