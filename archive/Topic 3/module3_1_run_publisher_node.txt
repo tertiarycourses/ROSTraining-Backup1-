@@ -1,5 +1,0 @@
-# Locate the fake_ar_publisher package you downloaded earlier.
-rospack find fake_ar_publisher
-
-# To run the publisher
-rosrun fake_ar_publisher fake_ar_publisher_node
